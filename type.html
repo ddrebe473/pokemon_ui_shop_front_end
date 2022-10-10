@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Type</title>
+        <link rel="stylesheet" href="styles/css/styles.css" />
+    </head>
+    <body class="position-relative">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                >
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+        </ul>
+
+        <select name="sortField" id="sortDropDown" onChange="sortList()">
+            <option value="default">Default</option>
+            <option value="priceAsc">Price Ascending</option>
+            <option value="priceDesc">Price Descending</option>
+            <option value="alphaAsc">A-Z</option>
+            <option value="alphaDesc">Z-A</option>
+        </select>
+
+        <div
+            class="typeContainer overflow-auto w-100 pb-4"
+        ></div>
+
+        <div
+            class="container-fluid justify-content position-absolute bottom-0 px-0 py-0"
+        >
+            <div class="row d-flex justify-content-center">
+                <div class="text-center px-0"></div>
+            </div>
+            <div
+                class="text-center user-select-none bg-dark text-light w-100 my-0 px-0 py-0"
+            >
+                <a class="text-light text-decoration-none">
+                    © 2022 Copyright: PokeLabour
+                </a>
+                <a href="#" class="pe-auto">
+                    <img src="./imgs/25347.png" class="img-fluid" alt="..."
+                /></a>
+                <a href="#" class="pe-auto">
+                    <img src="./imgs/5968982.png" class="img-fluid" alt="..."
+                /></a>
+            </div>
+        </div>
+    </body>
+    <script src="./scripts/poke.js"></script>
+    <script src="./scripts/type.js"></script>
+</html>

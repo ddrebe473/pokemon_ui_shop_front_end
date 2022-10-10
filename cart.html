@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cart</title>
+        <link rel="stylesheet" href="styles/css/styles.css" />
+    </head>
+    <body class="position-relative">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="cart.html">Cart</a>
+            </li>
+        </ul>
+
+        <h1 class="totalVal">$0.00</h1>
+
+        <button class="btn btn-primary" id="clearCart" onclick="clearCart()">
+            Clear Cart
+        </button>
+        <button class="btn btn-primary" id="checkout" onclick="checkOut()">
+            Check Out
+        </button>
+
+        <div class="cartContainer overflow-auto w-100 pb-4"></div>
+
+        <div
+            class="container-fluid justify-content position-fixed bottom-0 px-0 py-0"
+        >
+            <div class="row d-flex justify-content-center">
+                <div class="text-center px-0"></div>
+            </div>
+            <div
+                class="text-center user-select-none bg-dark text-light w-100 my-0 px-0 py-0"
+            >
+                <a class="text-light text-decoration-none">
+                    © 2022 Copyright: PokeLabour
+                </a>
+                <a href="#" class="pe-auto">
+                    <img src="./imgs/25347.png" class="img-fluid" alt="..."
+                /></a>
+                <a href="#" class="pe-auto">
+                    <img src="./imgs/5968982.png" class="img-fluid" alt="..."
+                /></a>
+            </div>
+        </div>
+    </body>
+    <script src="./scripts/poke.js"></script>
+    <script src="./scripts/cart.js"></script>
+</html>
