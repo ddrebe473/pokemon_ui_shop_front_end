@@ -7,19 +7,28 @@
         <title>Cart</title>
         <link rel="stylesheet" href="styles/css/styles.css" />
     </head>
-    <body class="position-relative">
-        <ul class="nav nav-tabs">
+    <body
+        class="position-relative vh-100"
+        style="
+            margin: 0;
+            padding: 0;
+            background-image: url(./imgs/pokemon-art1.gif);
+            background-repeat: no-repeat;
+            min-width: 100%;
+            background-size: cover;
+            background-repeat: repeat-y;
+        "
+    >
+        <ul class="nav nav-tabs bg-body border-0">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                    >Home</a
-                >
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="cart.html">Cart</a>
+                <a class="nav-link active" href="#">Cart</a>
             </li>
         </ul>
 
-        <h1 class="totalVal">$0.00</h1>
+        <h1 class="totalVal bg-white">$0.00</h1>
 
         <button class="btn btn-primary" id="clearCart" onclick="clearCart()">
             Clear Cart

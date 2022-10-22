@@ -4,14 +4,25 @@ const TYPE_IMAGE_BASE_URL =
     'https://www.serebii.net/newpokemonsnap/stickers/type';
 
 const INCLUDE_LIST = [
-    'normal',
-    'ground',
-    'steel',
+    'grass',
     'fire',
     'water',
-    'grass',
+    'normal',
     'electric',
+    'ground',
+    'steel',
     'psychic',
+    'fairy',
+    'ghost',
+    'dark',
+    'ice',
+    'rock',
+    'dragon',
+    'flying',
+    'fighting',
+    'poison',
+    'bug',
+
 ];
 
 const getTypes = async () => {

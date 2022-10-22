@@ -113,6 +113,16 @@ const load = async () => {
 
     pokemonList = pokemon;
     displayPokemon();
+
+    //add background image to each type
+    const types = await getTypes();
+    const type = types.find(t=> t.name === typeName);
+ 
+    const body = document.querySelector('body');
+    body.style.backgroundImage = `url(${type.image})`
+    body.style.backgroundSize = '125%'
+    body.style.backgroundPosition='center'
+    
 };
 
 window.addEventListener('load', load);

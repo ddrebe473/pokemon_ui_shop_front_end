@@ -34,6 +34,7 @@ const load = async () => {
         div.appendChild(btn);
         div.style.display = 'flex';
         div.style.flexDirection = 'column';
+        div.style.padding='40px'
         // add the div to the pokeContainer
         pokeContainer.appendChild(div);
     }

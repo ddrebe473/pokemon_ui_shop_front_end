@@ -31,9 +31,17 @@ const checkOut = async () => {
     if (!getTotalVal()) {
         alert('Insert Items');
     } else {
-        const val = totalValue
+        const val = totalValue;
         await clearCart();
-        setTimeout(() => alert(`Purchase Successful, $${val.toFixed(2)} has been charged to your account `), 100);
+        setTimeout(
+            () =>
+                alert(
+                    `Purchase Successful, $${val.toFixed(
+                        2
+                    )} has been charged to your account `
+                ),
+            100
+        );
     }
 };
 
