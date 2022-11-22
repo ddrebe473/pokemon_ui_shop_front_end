@@ -1,6 +1,6 @@
 const API_URL = 'http://localhost:8000/api/pokemon';
 
-const load = async () => {
+const loadData = async () => {
     console.log('index loaded');
 
     //get poke types from api
@@ -40,4 +40,4 @@ const load = async () => {
     }
 };
 
-window.addEventListener('load', load);
+window.addEventListener('load', loadData);
